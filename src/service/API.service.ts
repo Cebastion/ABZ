@@ -1,9 +1,8 @@
-import axios from "axios";
 import type { IData } from "../interface/data.interface";
 import type { IPositions } from "../interface/position.interface";
 import type { IToken } from "../interface/token.interface";
 import type { IUser } from "../interface/user.interface";
-import { AxiosError } from "axios";
+import axios from 'axios';
 
 export class APIService {
     private static API_URL: string = 'https://frontend-test-assignment-api.abz.agency/api/v1'
@@ -35,7 +34,7 @@ export class APIService {
             })
             return res.data
         } catch (err) {
-            if (AxiosError(err)) {
+            if (err) {
                 console.error("API error:", err.response?.data)
                 return err.response?.data
             }
