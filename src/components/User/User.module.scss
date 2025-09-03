@@ -1,0 +1,56 @@
+.block {
+  border-radius: 16px;
+  width: 350px;
+  height: 234px;
+  padding: 10px;
+  background: #fff;
+  text-align: center; // чтобы все было по центру
+}
+
+.image {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.name {
+  margin: 5px 0;
+}
+
+.nameText {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 162%;
+  color: var(--black-87);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  width: 100%; // под ширину блока
+  display: block;
+}
+
+.positionText {
+  font-size: 14px;
+  color: var(--black-87);
+}
+
+.emailText {
+  font-size: 14px;
+  color: var(--black-87);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; // email всегда в одну строку
+  width: 100%; // под ширину блока
+  display: block;
+}
+
+.phoneText {
+  font-size: 14px;
+  color: var(--black-87);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

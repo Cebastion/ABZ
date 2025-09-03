@@ -1,0 +1,144 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 380px;
+  margin: 50px auto 0;
+}
+
+.input {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: #7e7e7e;
+  height: 54px;
+  border: 1px solid #7E7E7E;
+  padding-left: 16px;
+  border-radius: 5px;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+
+  span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    color: #7e7e7e;
+    text-align: left;
+    padding-left: 15px;
+  }
+}
+
+.position {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    gap: 8px;
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    span {
+      position: relative;
+      padding-left: 28px;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 162%;
+      color: var(--black-87);
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        box-sizing: border-box;
+        border: 1px solid rgba(208, 207, 207, 1);
+        border-radius: 50%;
+        background: #fff;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    input[type="radio"]:checked+span::before {
+      background: radial-gradient(circle, rgba(0, 189, 211, 1) 40%, transparent 45%);
+      border: 1px solid rgba(0, 189, 211, 1);
+    }
+  }
+}
+
+
+.photo {
+  display: flex;
+
+  label button {
+    width: 83px;
+    height: 54px;
+    box-sizing: border-box;
+    border: 1px solid var(--Black 87, rgba(0, 0, 0, 0.87));
+    border-radius: 4px 0px 0px 4px;
+    background: white;
+    color: var(--Black 87, rgba(0, 0, 0, 0.87));
+
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .photo_name {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    box-sizing: border-box;
+    border: 2px solid var(--Black 87, rgba(0, 0, 0, 0.87));
+    border-radius: 4px 0px 0px 4px;
+    background: white;
+    color: var(--Black 87, rgba(0, 0, 0, 0.87));
+
+    span {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 162%;
+      color: #7e7e7e;
+      padding-left: 15px;
+    }
+
+  }
+}
+
+
+.button {
+  border-radius: 80px;
+  width: 100px;
+  height: 34px;
+  background: #B4B4B4;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+}

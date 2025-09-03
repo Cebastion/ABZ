@@ -1,0 +1,110 @@
+.header {
+  background: #fff;
+  height: 60px;
+
+
+  .header_container {
+    margin: 0 auto;
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.header_buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header_button {
+  border-radius: 80px;
+  width: 100px;
+  height: 34px;
+  background: var(--primary);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  color: var(--black-87);
+}
+
+.about {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), // затемнение
+    url('/pexels-alexandr-podvalny-1227513.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+
+  .about_container {
+    margin: 0 auto;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    margin-bottom: 21px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+
+  }
+
+  span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    color: #fff;
+
+  }
+
+  button {
+    margin-top: 31px;
+  }
+}
+
+.section_users {
+  margin-top: 140px;
+
+  h2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--black-87);
+
+  }
+}
+
+.users {
+  margin-bottom: 20px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.section_form {
+  margin-top: 140px;
+
+  h2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--black-87);
+  }
+}

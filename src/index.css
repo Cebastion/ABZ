@@ -1,0 +1,21 @@
+:root {
+    --primary: #f4e041;
+    --background: #f8f8f8;
+    --black-87: rgba(0, 0, 0, 0.87);
+    --secondary: #00bdd3;
+}
+
+:root {
+    --font-family: "Nunito", sans-serif;
+    --second-family: "Asap", sans-serif;
+}
+
+main {
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+body {
+    background-color: var(--background);
+}
